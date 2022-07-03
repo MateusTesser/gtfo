@@ -15,8 +15,8 @@ banner = '''
  \_, / \__/ /_/   \___//_.__//_/  /_//_//___/
 /___/
 '''
-
-data_dir = "data/"
+path = os.path.join(os.path.dirname(__file__))
+data_dir = path+"/data/"
 json_ext = ".json"
 
 info = Template(Style.BRIGHT + '[ ' + Fore.GREEN + '*' + Fore.RESET + ' ] ' + Style.RESET_ALL + '$text')
